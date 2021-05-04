@@ -1,2 +1,7 @@
-#binaries 
+# binaries and others
 bin
+testbin
+
+# ignore the output of coverage tool
+*.out
+
