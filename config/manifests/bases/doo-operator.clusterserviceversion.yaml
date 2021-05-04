@@ -1,0 +1,46 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: doo-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Doo is the Schema for the dooes API
+      displayName: Doo
+      kind: Doo
+      name: doos.cache.example.com
+      version: v1alpha1
+  description: The Doo Operator handles creating doos
+  displayName: Doo Operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - doo
+  - whowutwut
+  links:
+  - name: Doo Operator
+    url: https://doo-operator.domain
+  maturity: alpha
+  provider:
+    name: Victor Biznas
+    url: github.com/whowutwut/doo-operator
+  version: 0.0.0
